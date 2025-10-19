@@ -11,7 +11,62 @@ public class Person {
     public Person(String firstName, String secondName, String telephone, String email) {
         this.id = nextId++;
         this.firstName = firstName;
-        // add others
+        this.secondName=secondName;
+        this.phone=telephone;
+        this.email=email;
+    }
+    //no args constructor
+    public Person(){
+        this.id = nextId++;
+    };
+    //Getters ans Setters
+
+    public int getId() {
+        return id;
+    }
+
+    public static int getNextId() {
+        return nextId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
+    }
+
+    public String toString() {
+        return getSecondName()+" "+getFirstName();
     }
 }
 
