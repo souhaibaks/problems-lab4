@@ -13,6 +13,7 @@ public class Student extends Person {
     public Student(String nom, String prenom, String telephone, String email, String cne) {
         this(nom, prenom, telephone, email,cne,Major.getDefaultMajor()); //calls the previous constructor
     }
+    public Student(){};
 
     // Getters
 
